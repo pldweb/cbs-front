@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --color-emerald: #0F5D4E;
+  --color-emerald-50: #EAF4F1;
+  --color-emerald-100: #D2E7E1;
+  --color-emerald-200: #A5CFC3;
+  --color-emerald-300: #6FB1A0;
+  --color-emerald-400: #3C8A76;
+  --color-emerald-500: #0F5D4E;
+  --color-emerald-600: #0D5344;
+  --color-emerald-700: #0A4339;
+  --color-emerald-800: #08362E;
+  --color-emerald-900: #052E27;
+
+  --color-gold: #D4AF37;
+  --color-gold-50: #FBF6E7;
+  --color-gold-100: #F6EBC4;
+  --color-gold-200: #EDD787;
+  --color-gold-300: #E3C354;
+  --color-gold-400: #D4AF37;
+  --color-gold-500: #B8942A;
+  --color-gold-600: #937522;
+  --color-gold-700: #6E581A;
+
+  --color-forest: #052E27;
+  --color-forestdeep: #021A16;
+  --color-warm: #FAF8F3;
+  --color-ink: #1A1A1A;
+  --color-muted: #5B5B5B;
+
+  --font-family-heading: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-family-body: "Poppins", system-ui, sans-serif;
+  --font-family-small: "Inter", system-ui, sans-serif;
+
+  --radius-xl2: 24px;
+
+  --max-width-container: 1200px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-body);
+  color: var(--color-ink);
+  background-color: var(--color-warm);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-family-heading);
+  letter-spacing: -0.01em;
+}
+
+.font-heading { font-family: var(--font-family-heading); }
+.font-body { font-family: var(--font-family-body); }
+.font-small { font-family: var(--font-family-small); }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-floaty {
+  animation: floaty 5s ease-in-out infinite;
+}
+
+.card-float {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.35s ease;
+}
+.card-float:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 60px -20px rgba(5, 46, 39, 0.3);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

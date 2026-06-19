@@ -1,0 +1,36 @@
+# Nuxt
+.nuxt/
+.output/
+node_modules/
+dist/
+
+# Build artifacts
+.nitro/
+
+# Nuxt generate
+public/_nuxt/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Cache
+.cache/
+*.tsbuildinfo
