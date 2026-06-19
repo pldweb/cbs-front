@@ -16,11 +16,11 @@
   <section id="hero" class="relative min-h-screen flex items-center overflow-hidden bg-warm">
     <div
       class="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-[0.04]"
-      style="background: radial-gradient(circle, var(--emerald) 0%, transparent 70%)"
+      style="background: radial-gradient(circle, var(--color-emerald) 0%, transparent 70%)"
     />
     <div
       class="absolute bottom-10 left-10 w-40 h-40 rounded-full opacity-10"
-      style="background: radial-gradient(circle, var(--gold) 0%, transparent 70%)"
+      style="background: radial-gradient(circle, var(--color-gold) 0%, transparent 70%)"
     />
 
     <div class="max-w-container mx-auto px-5 lg:px-8 w-full">
@@ -28,16 +28,13 @@
         <!-- KIRI: Visual -->
         <div class="order-2 lg:order-1 flex justify-center">
           <div class="relative w-80 h-80 sm:w-[400px] sm:h-[400px] lg:w-[480px] lg:h-[480px]">
-            <!-- Placeholder — ganti dengan gambar AI-generated -->
-            <div
-              class="w-full h-full rounded-[40px] bg-gradient-to-br from-emerald-100 via-gold/10 to-warm flex items-center justify-center border-2 border-dashed border-emerald-200 overflow-hidden"
-            >
-              <div class="text-center p-8">
-                <div class="text-6xl mb-4">🕌</div>
-                <p class="font-small text-xs text-muted/60 leading-relaxed max-w-[200px]">
-                  Ilustrasi: Muslim profesional<br/>memegang Al-Qur'an,<br/>cahaya keemasan,<br/>siluet masjid modern
-                </p>
-              </div>
+            <!-- Generated AI Image -->
+            <div class="w-full h-full rounded-[40px] overflow-hidden shadow-premium border border-emerald-100">
+              <img
+                src="/hero-illustration.png"
+                alt="Muslim profesional berhijrah finansial"
+                class="w-full h-full object-cover"
+              />
             </div>
             <!-- Decorative floating elements -->
             <div
