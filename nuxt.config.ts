@@ -22,15 +22,36 @@ export default defineNuxtConfig({
           content:
             'Cahaya Berkah Semesta (CBS) — Selaraskan urusan rezeki, ketenangan jiwa, dan masa depan keluarga melalui ekosistem bisnis yang halal dan penuh keberkahan.',
         },
-        { property: 'og:title', content: 'CBS — Hijrah Finansial' },
+        {
+          name: 'keywords',
+          content:
+            'Cahaya Berkah Semesta, CBS, Hijrah Finansial, Bisnis Halal, Ekosistem Syariah, Bisnis Tanpa Riba, Produk Halal Premium, Kemitraan CBS',
+        },
+        { name: 'robots', content: 'index, follow' },
+        { name: 'author', content: 'Cahaya Berkah Semesta' },
+        // Open Graph / Facebook
+        { property: 'og:type', content: 'website' },
+        { property: 'og:title', content: 'CBS — Menemukan Kedamaian Lewat Hijrah Finansial' },
         {
           property: 'og:description',
           content:
-            'Bukan sekadar peluang bisnis, tetapi perjalanan menuju rezeki yang lebih halal, lebih berkah, dan lebih menenangkan.',
+            'Bukan sekadar peluang bisnis, tetapi perjalanan menuju rezeki yang lebih halal, lebih berkah, dan lebih menenangkan bersama Cahaya Berkah Semesta.',
         },
-        { property: 'og:type', content: 'website' },
+        { property: 'og:image', content: '/hero-illustration.png' },
+        { property: 'og:site_name', content: 'Cahaya Berkah Semesta (CBS)' },
+        { property: 'og:locale', content: 'id_ID' },
+        // Twitter Card
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'CBS — Menemukan Kedamaian Lewat Hijrah Finansial' },
+        {
+          name: 'twitter:description',
+          content:
+            'Bukan sekadar peluang bisnis, tetapi perjalanan menuju rezeki yang lebih halal, lebih berkah, dan lebih menenangkan bersama Cahaya Berkah Semesta.',
+        },
+        { name: 'twitter:image', content: '/hero-illustration.png' },
       ],
       link: [
+        { rel: 'icon', type: 'image/png', href: '/fav.png' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         {
