@@ -50,10 +50,9 @@ const benefits = [
               :to="wa"
               target="_blank"
               rel="noopener"
-              color="primary"
               size="xl"
               block
-              class="rounded-2xl font-semibold"
+              class="rounded-2xl text-center font-semibold bg-gold text-forest hover:bg-gold-200 transition-all duration-300 border-none shadow-md"
             >
               Ya, Saya Mau Mulai Hijrah Finansial →
             </UButton>

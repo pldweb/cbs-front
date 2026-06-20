@@ -33,7 +33,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
           <img
             src="~/assets/css/logo-cahaya-berkah-semesta.png"
             alt="CBS Cahaya Berkah Semesta"
-            class="h-15 w-auto filter brightness-0 invert"
+            class="h-17 w-auto"
           />
         </a>
 

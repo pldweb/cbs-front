@@ -17,7 +17,7 @@ const year = new Date().getFullYear()
           <img
             src="~/assets/css/logo-cahaya-berkah-semesta.png"
             alt="CBS Cahaya Berkah Semesta"
-            class="h-10 w-auto"
+            class="h-20 w-auto"
           />
           <p class="font-heading text-gold mt-4 text-lg">
             "Bertumbuh, Bermanfaat, Berkah."

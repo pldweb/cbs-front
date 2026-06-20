@@ -3,6 +3,7 @@
     <SiteHeader />
     <HeroSection />
     <MasalahSection />
+    <SolusiSection />
     <BigIdeaSection />
     <HijrahSection />
     <EkosistemSection />

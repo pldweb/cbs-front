@@ -21,10 +21,6 @@
 
     <div class="max-w-container mx-auto px-5 lg:px-8 relative z-10">
       <div class="max-w-3xl mx-auto text-center">
-        <div class="inline-flex items-center gap-2 bg-gold/20 text-gold font-small text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-8">
-          <UIcon name="i-heroicons-light-bulb" class="w-4 h-4" />
-          Big Idea
-        </div>
 
         <h2 class="font-heading font-extrabold text-3xl sm:text-4xl lg:text-[64px] lg:leading-tight text-white leading-tight">
           Mungkin yang kita butuhkan

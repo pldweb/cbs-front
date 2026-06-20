@@ -67,12 +67,14 @@ const testimonials = [
       <div class="mt-14 relative">
         <UCarousel
           :items="testimonials"
-          :items-per-slide="1"
           :ui="{ item: 'md:basis-1/2 lg:basis-1/3' }"
           arrows
-          class="gap-6"
-          prev-icon="i-heroicons-chevron-left"
-          next-icon="i-heroicons-chevron-right"
+          loop
+          class="gap-6 relative"
+          prev-icon="i-lucide-chevron-left"
+          next-icon="i-lucide-chevron-right"
+          :prev="{ color: 'primary', variant: 'outline', size: 'xl', class: 'absolute left-2 md:left-4 top-1/2 -translate-y-1/2 rounded-full bg-white shadow-md hover:bg-emerald-50 transition-colors z-30 pointer-events-auto w-12 h-12 md:w-14 md:h-14 flex items-center justify-center' }"
+          :next="{ color: 'primary', variant: 'outline', size: 'xl', class: 'absolute right-2 md:right-4 top-1/2 -translate-y-1/2 rounded-full bg-white shadow-md hover:bg-emerald-50 transition-colors z-30 pointer-events-auto w-12 h-12 md:w-14 md:h-14 flex items-center justify-center' }"
         >
           <template #default="{ item }">
             <div class="card-float bg-white rounded-3xl p-7 border border-emerald-100/50 mx-3 h-full">
