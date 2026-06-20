@@ -13,7 +13,7 @@
 </script>
 
 <template>
-  <section id="hero" class="relative min-h-screen flex items-center overflow-hidden bg-warm">
+  <section id="hero" class="relative min-h-screen flex items-center pt-28 pb-20 lg:py-0 overflow-hidden bg-warm">
     <div
       class="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-[0.04]"
       style="background: radial-gradient(circle, var(--color-emerald) 0%, transparent 70%)"
@@ -27,7 +27,7 @@
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <!-- KIRI: Visual -->
         <div class="order-2 lg:order-1 flex justify-center">
-          <div class="relative w-80 h-80 sm:w-[400px] sm:h-[400px] lg:w-[480px] lg:h-[480px]">
+          <div class="relative w-full max-w-[500px] aspect-square sm:w-[400px] sm:h-[400px] lg:w-[480px] lg:h-[480px]">
             <!-- Generated AI Image -->
             <div class="w-full h-full rounded-[40px] overflow-hidden shadow-premium border border-emerald-100">
               <img
@@ -51,19 +51,18 @@
         </div>
 
         <!-- KANAN: Copy -->
-        <div class="order-1 lg:order-2">
+        <div class="order-1 lg:order-2 text-center lg:text-left">
           <span
             class="inline-block font-small text-xs font-medium tracking-widest uppercase text-emerald-500 bg-emerald-50 px-3.5 py-1.5 rounded-full mb-6"
           >
             Gerakan Hijrah Finansial
           </span>
 
-          <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl xl:text-[72px] leading-[1.05] text-ink">
+          <h1 class="font-heading font-extrabold text-5xl sm:text-6xl lg:text-6xl xl:text-[72px] leading-[1.05] text-ink">
             Menemukan Kedamaian
             <br />
-            <span class="text-emerald-500">Lewat Hijrah</span>
+            <span class="text-emerald-500">Lewat Hijrah Finansial</span>
             <br />
-            Finansial
           </h1>
 
           <p class="mt-6 text-lg text-muted max-w-lg leading-relaxed">
@@ -91,7 +90,11 @@
           </div>
 
           <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <UButton to="#kemitraan" color="primary" size="xl" class="rounded-2xl font-semibold px-8">
+            <UButton
+              to="#kemitraan"
+              size="xl"
+              class="rounded-2xl text-center font-semibold px-8 bg-emerald text-white hover:bg-emerald-600 transition-all duration-300 border-none shadow-md"
+            >
               Saya Siap Hijrah Finansial →
             </UButton>
             <UButton
@@ -112,8 +115,12 @@
       </div>
     </div>
 
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-floaty">
-      <UIcon name="i-heroicons-chevron-down" class="w-6 h-6 text-emerald-400" />
-    </div>
+    <a
+      href="#hijrah"
+      class="hidden lg:block absolute bottom-8 left-1/2 -translate-x-1/2 animate-floaty text-emerald-400 hover:text-emerald-600 transition-colors"
+      aria-label="Scroll ke penjelasan"
+    >
+      <UIcon name="i-heroicons-chevron-down" class="w-7 h-7" />
+    </a>
   </section>
 </template>

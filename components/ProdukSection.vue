@@ -5,7 +5,7 @@ const produk = [
     tagline: 'Imunitas Premium Halal',
     desc: 'Formula propolis nano-teknologi untuk daya tahan tubuh optimal. Produk flagship CBS.',
     price: 'Rp 185.000',
-    image: '🍯',
+    image: '/propolis.png',
     color: 'from-amber-400 to-amber-600',
   },
   {
@@ -13,7 +13,7 @@ const produk = [
     tagline: 'Nutrisi Sunnah Keluarga',
     desc: 'Suplemen harian berbasis bahan alami sunnah untuk kesehatan seluruh anggota keluarga.',
     price: 'Rp 150.000',
-    image: '🌿',
+    image: '/alanabi.png',
     color: 'from-emerald-400 to-emerald-600',
   },
   {
@@ -21,7 +21,7 @@ const produk = [
     tagline: 'Perawatan Diri Syar\'i',
     desc: 'Rangkaian skincare dan perawatan tubuh berbahan alami, aman, dan sesuai syariat.',
     price: 'Rp 120.000',
-    image: '✨',
+    image: '/zammis.png',
     color: 'from-sky-400 to-sky-600',
   },
   {
@@ -29,7 +29,7 @@ const produk = [
     tagline: 'Belajar Al-Quran Interaktif',
     desc: 'Platform pembelajaran Al-Quran modern dengan metode interaktif untuk semua usia.',
     price: 'Rp 99.000',
-    image: '📖',
+    image: '/the-living-quran.png',
     color: 'from-rose-400 to-rose-600',
   },
 ]
@@ -55,20 +55,29 @@ const produk = [
         <div
           v-for="(p, i) in produk"
           :key="p.name"
-          class="card-float glass-card rounded-3xl p-7 text-center group cursor-default"
+          class="card-float glass-card rounded-[28px] p-5 text-center group cursor-default flex flex-col justify-between"
         >
-          <div class="text-5xl mb-5">{{ p.image }}</div>
-          <div
-            :class="[
-              'inline-block bg-gradient-to-r text-white font-small text-[11px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full mb-3',
-              p.color,
-            ]"
-          >
-            {{ p.tagline }}
+          <div>
+            <!-- Product Image Container -->
+            <div class="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-5 bg-warm border border-emerald-100/30">
+              <img
+                :src="p.image"
+                :alt="p.name"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div
+              :class="[
+                'inline-block bg-gradient-to-r text-white font-small text-[11px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full mb-3',
+                p.color,
+              ]"
+            >
+              {{ p.tagline }}
+            </div>
+            <h3 class="font-heading font-bold text-lg text-ink mb-2.5">{{ p.name }}</h3>
+            <p class="font-small text-sm text-muted leading-relaxed mb-5">{{ p.desc }}</p>
           </div>
-          <h3 class="font-heading font-bold text-lg text-ink mb-2.5">{{ p.name }}</h3>
-          <p class="font-small text-sm text-muted leading-relaxed mb-5">{{ p.desc }}</p>
-          <p class="font-heading font-extrabold text-xl text-emerald-500">{{ p.price }}</p>
+          <p class="font-heading font-extrabold text-xl text-emerald-500 mt-auto">{{ p.price }}</p>
         </div>
       </div>
     </div>

@@ -19,18 +19,6 @@
       <div class="absolute top-1/2 left-1/3 w-48 h-48 rounded-full border border-gold/25" />
     </div>
 
-    <!-- Visual placeholder -->
-    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-40 opacity-20 pointer-events-none">
-      <div class="w-full h-full flex items-end justify-center">
-        <!-- Simple CSS silhouette path -->
-        <div class="text-6xl">🚶</div>
-        <div class="ml-2 text-6xl text-gold/40">✨</div>
-      </div>
-      <p class="text-center font-small text-[10px] text-white/30 mt-2">
-        Ilustrasi: Siluet berjalan dari gelap menuju cahaya (AI-generated)
-      </p>
-    </div>
-
     <div class="max-w-container mx-auto px-5 lg:px-8 relative z-10">
       <div class="max-w-3xl mx-auto text-center">
         <div class="inline-flex items-center gap-2 bg-gold/20 text-gold font-small text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-8">
@@ -49,6 +37,15 @@
         <p class="mt-8 font-heading font-extrabold text-3xl sm:text-4xl lg:text-[64px] lg:leading-tight">
           <span class="text-gold">Tapi Hijrah Finansial.</span>
         </p>
+
+        <!-- Premium AI Generated Illustration Banner -->
+        <div class="mt-10 mb-10 max-w-2xl mx-auto rounded-[32px] overflow-hidden shadow-2xl border border-white/10 aspect-[16/9] opacity-95">
+          <img
+            src="/big-idea-illustration.png"
+            alt="Hijrah Finansial siluet berjalan menuju cahaya"
+            class="w-full h-full object-cover"
+          />
+        </div>
 
         <p class="mt-8 text-lg text-white/70 max-w-xl mx-auto leading-relaxed">
           CBS hadir bukan sekadar peluang bisnis — tetapi gerakan untuk menyelaraskan urusan rezeki,

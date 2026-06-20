@@ -12,7 +12,7 @@ const timeline = [
     ],
     bg: 'bg-rose-50 border-rose-200',
     text: 'text-rose-600',
-    icon: 'i-heroicons-exclamation-triangle',
+    icon: 'i-heroicons-x-circle',
   },
   {
     side: 'right',
@@ -103,7 +103,7 @@ const timeline = [
                   class="flex items-center gap-3 font-small text-sm text-ink/80"
                   :class="t.side === 'right' ? 'lg:flex-row' : 'lg:flex-row-reverse'"
                 >
-                  <UIcon name="i-heroicons-check" :class="[t.text, 'w-4 h-4 shrink-0']" />
+                  <UIcon :name="t.side === 'right' ? 'i-heroicons-check' : 'i-heroicons-x-mark'" :class="[t.text, 'w-4 h-4 shrink-0']" />
                   <span>{{ p }}</span>
                 </li>
               </ul>

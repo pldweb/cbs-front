@@ -23,8 +23,8 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
 
 <template>
   <header
-    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
-    :class="scrolled ? 'bg-white/90 backdrop-blur-md shadow-soft' : 'bg-white/70 backdrop-blur-sm'"
+    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b"
+    :class="scrolled ? 'bg-forest/95 border-emerald-900/40 shadow-soft backdrop-blur-md' : 'bg-forest/95 border-transparent backdrop-blur-sm'"
   >
     <div class="max-w-container mx-auto px-5 lg:px-8">
       <div class="flex items-center justify-between h-[72px]">
@@ -33,7 +33,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
           <img
             src="~/assets/css/logo-cahaya-berkah-semesta.png"
             alt="CBS Cahaya Berkah Semesta"
-            class="h-10 w-auto"
+            class="h-15 w-auto filter brightness-0 invert"
           />
         </a>
 
@@ -43,7 +43,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
             v-for="m in menu"
             :key="m.to"
             :href="m.to"
-            class="font-small text-sm text-ink/80 hover:text-emerald-500 transition-colors"
+            class="font-small text-sm text-white/80 hover:text-gold transition-colors"
           >
             {{ m.label }}
           </a>
@@ -53,9 +53,10 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
         <div class="hidden lg:block">
           <UButton
             to="#kemitraan"
-            color="primary"
+            color="white"
+            variant="solid"
             size="lg"
-            class="rounded-2xl font-medium px-5"
+            class="rounded-2xl font-semibold px-5 text-forest bg-gold hover:bg-gold-200 hover:text-forest transition-all duration-300"
           >
             KONSULTASI GRATIS
           </UButton>
@@ -63,7 +64,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
 
         <!-- Mobile toggle -->
         <button
-          class="lg:hidden grid place-items-center w-10 h-10 rounded-xl text-emerald-500"
+          class="lg:hidden grid rounded-xl place-items-center w-10 h-10 text-forest bg-gold hover:bg-gold-200 hover:text-forest transition-all duration-300"
           @click="isOpen = !isOpen"
           aria-label="Menu"
         >
@@ -78,12 +79,12 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
             v-for="m in menu"
             :key="m.to"
             :href="m.to"
-            class="py-2.5 px-3 rounded-xl font-small text-sm text-ink/80 hover:bg-emerald-50"
+            class="py-2.5 px-3 rounded-xl font-small text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors"
             @click="isOpen = false"
           >
             {{ m.label }}
           </a>
-          <UButton to="#kemitraan" color="primary" block class="rounded-2xl mt-2" @click="isOpen = false">
+          <UButton to="#kemitraan" color="white" variant="solid" block class="rounded-2xl mt-2 text-forest bg-gold hover:bg-gold-200 hover:text-forest transition-all duration-300" @click="isOpen = false">
             KONSULTASI GRATIS
           </UButton>
         </nav>
