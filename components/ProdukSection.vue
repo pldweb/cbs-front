@@ -53,40 +53,25 @@ const produk = [
 
       <!-- Mobile View: Carousel (sm:hidden) -->
       <div class="mt-10 sm:hidden">
-        <UCarousel
-          v-slot="{ item: p }"
-          :items="produk"
-          :ui="{ item: 'basis-[85%] px-2' }"
-          arrows
-          loop
-          class="w-full relative"
-          prev-icon="i-lucide-chevron-left"
-          next-icon="i-lucide-chevron-right"
+        <UCarousel v-slot="{ item: p }" :items="produk" :ui="{ item: 'basis-[85%] px-2' }" arrows loop
+          class="w-full relative" prev-icon="i-lucide-chevron-left" next-icon="i-lucide-chevron-right"
           :prev="{ color: 'primary', variant: 'outline', size: 'lg', class: 'absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-white shadow-md hover:bg-emerald-50 transition-colors z-30 pointer-events-auto w-10 h-10 flex items-center justify-center' }"
-          :next="{ color: 'primary', variant: 'outline', size: 'lg', class: 'absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-white shadow-md hover:bg-emerald-50 transition-colors z-30 pointer-events-auto w-10 h-10 flex items-center justify-center' }"
-        >
+          :next="{ color: 'primary', variant: 'outline', size: 'lg', class: 'absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-white shadow-md hover:bg-emerald-50 transition-colors z-30 pointer-events-auto w-10 h-10 flex items-center justify-center' }">
           <div
-            class="card-float glass-card rounded-[28px] p-5 text-center group cursor-default flex flex-col justify-between h-full w-full border border-emerald-100/50"
-          >
+            class="card-float glass-card rounded-[28px] p-5 text-center group cursor-default flex flex-col justify-between h-full w-full border border-emerald-100/50">
             <div>
               <!-- Product Image Container -->
               <div class="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-5 bg-warm border border-emerald-100/30">
-                <img
-                  :src="p.image"
-                  :alt="p.name"
-                  class="w-full h-full object-cover"
-                />
+                <img :src="p.image" :alt="p.name" class="w-full h-full object-cover" />
               </div>
-              <div
-                :class="[
-                  'inline-block bg-gradient-to-r text-white font-small text-[11px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full mb-3',
-                  p.color,
-                ]"
-              >
+              <div :class="[
+                'inline-block bg-gradient-to-r text-white font-small text-[11px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full mb-3',
+                p.color,
+              ]">
                 {{ p.tagline }}
               </div>
               <h3 class="font-heading font-bold text-lg text-ink mb-2.5">{{ p.name }}</h3>
-              <p class="font-small text-sm text-muted leading-relaxed mb-5">{{ p.desc }}</p>
+              <p class="font-small max-sm:text-lg text-sm text-muted leading-relaxed mb-5">{{ p.desc }}</p>
             </div>
             <p class="font-heading font-extrabold text-xl text-emerald-500 mt-auto">{{ p.price }}</p>
           </div>
@@ -95,26 +80,18 @@ const produk = [
 
       <!-- Desktop View: Grid (hidden sm:grid) -->
       <div class="mt-14 hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-6">
-        <div
-          v-for="(p, i) in produk"
-          :key="p.name"
-          class="card-float glass-card rounded-[28px] p-5 text-center group cursor-default flex flex-col justify-between"
-        >
+        <div v-for="(p, i) in produk" :key="p.name"
+          class="card-float glass-card rounded-[28px] p-5 text-center group cursor-default flex flex-col justify-between">
           <div>
             <!-- Product Image Container -->
             <div class="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-5 bg-warm border border-emerald-100/30">
-              <img
-                :src="p.image"
-                :alt="p.name"
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
+              <img :src="p.image" :alt="p.name"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
-            <div
-              :class="[
-                'inline-block bg-gradient-to-r text-white font-small text-[11px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full mb-3',
-                p.color,
-              ]"
-            >
+            <div :class="[
+              'inline-block bg-gradient-to-r text-white font-small text-[11px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full mb-3',
+              p.color,
+            ]">
               {{ p.tagline }}
             </div>
             <h3 class="font-heading font-bold text-lg text-ink mb-2.5">{{ p.name }}</h3>

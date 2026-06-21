@@ -49,50 +49,38 @@ const pilar = [
 
       <div class="mt-16 relative">
         <div class="hidden lg:grid grid-cols-2 gap-x-20 gap-y-12 max-w-3xl mx-auto">
-          <div
-            v-for="(p, i) in pilar"
-            :key="p.title"
-            class="relative group"
-            :class="[
-              i === 0 ? 'lg:translate-x-8' : '',
-              i === 1 ? 'lg:-translate-x-8' : '',
-              i === 2 ? 'lg:translate-x-8' : '',
-              i === 3 ? 'lg:-translate-x-8' : '',
-            ]"
-          >
+          <div v-for="(p, i) in pilar" :key="p.title" class="relative group" :class="[
+            i === 0 ? 'lg:translate-x-8' : '',
+            i === 1 ? 'lg:-translate-x-8' : '',
+            i === 2 ? 'lg:translate-x-8' : '',
+            i === 3 ? 'lg:-translate-x-8' : '',
+          ]">
             <div class="flex items-start gap-5">
-              <div
-                :class="[
-                  'grid place-items-center w-16 h-16 rounded-2xl shrink-0 bg-gradient-to-br text-white shadow-soft',
-                  p.gradient,
-                ]"
-              >
+              <div :class="[
+                'grid place-items-center w-16 h-16 rounded-2xl shrink-0 bg-gradient-to-br text-white shadow-soft',
+                p.gradient,
+              ]">
                 <UIcon :name="p.icon" class="w-7 h-7" />
               </div>
               <div class="pt-1">
                 <h3 class="font-heading font-bold text-2xl text-ink mb-2">{{ p.title }}</h3>
-                <p class="font-small text-sm text-muted leading-relaxed">{{ p.desc }}</p>
+                <p class="font-small max-sm:text-lg text-sm text-muted leading-relaxed">{{ p.desc }}</p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="grid sm:grid-cols-2 gap-6 lg:hidden">
-          <div
-            v-for="p in pilar"
-            :key="p.title"
-            class="card-float bg-warm rounded-3xl p-7 border border-emerald-100/50"
-          >
-            <div
-              :class="[
-                'grid place-items-center w-14 h-14 rounded-2xl bg-gradient-to-br text-white mb-5',
-                p.gradient,
-              ]"
-            >
+          <div v-for="p in pilar" :key="p.title"
+            class="card-float bg-warm rounded-3xl p-7 border border-emerald-100/50">
+            <div :class="[
+              'grid place-items-center w-14 h-14 rounded-2xl bg-gradient-to-br text-white mb-5',
+              p.gradient,
+            ]">
               <UIcon :name="p.icon" class="w-7 h-7" />
             </div>
             <h3 class="font-heading font-bold text-xl text-ink mb-2">{{ p.title }}</h3>
-            <p class="font-small text-sm text-muted leading-relaxed">{{ p.desc }}</p>
+            <p class="font-small max-sm:text-lg text-sm text-muted leading-relaxed">{{ p.desc }}</p>
           </div>
         </div>
       </div>
