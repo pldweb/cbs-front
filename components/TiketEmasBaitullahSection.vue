@@ -56,7 +56,7 @@ const benefits = [
           Program Unggulan CBS
         </div>
 
-        <h2 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white leading-tight max-w-4xl mx-auto">
+        <h2 class="font-heading font-extrabold text-3xl sm:text-5xl lg:text-6xl xl:text-7xl text-white leading-tight max-w-4xl mx-auto">
           Menjaga Nilai Rezeki,
           <br />
           <span class="text-gold">Menjemput Panggilan</span>
