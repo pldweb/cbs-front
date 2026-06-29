@@ -1,19 +1,21 @@
 <template>
-  <main>
-    <SiteHeader />
-    <HeroSection />
-    <MasalahSection />
-    <SolusiSection />
-    <BigIdeaSection />
-    <HijrahSection />
-    <EkosistemSection />
-    <ProdukSection />
-    <MudahSection />
-    <SocialProofSection />
-    <PaketSection />
-    <FaqSection />
-    <FinalCtaSection />
-    <SiteFooter />
-    <FloatingElements />
+  <main class="bg-warm">
+    <CbsHeader />
+    <HeroLandingSection />
+    <FinanceRealitySection />
+    <HiddenEnemySection />
+    <HijrahFinancialSection />
+    <PillarsSection />
+    <BaitullahFeatureSection />
+    <BaitullahRoadmapSection />
+    <EcosystemMapSection />
+    <SocialProofDashboardSection />
+    <FounderStorySection />
+    <VideoTestimonialsSection />
+    <PartnershipPackagesSection />
+    <BaitullahSimulatorSection />
+    <FaqLandingSection />
+    <FinalActionSection />
+    <CbsFooter />
   </main>
 </template>

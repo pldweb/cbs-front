@@ -2,7 +2,15 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-06-19',
   devtools: { enabled: true },
   modules: ['@nuxt/ui'],
+  runtimeConfig: {
+    public: {
+      apiBase: process.env.NUXT_PUBLIC_API_BASE || 'https://api.cbs.id/api',
+    },
+  },
   css: ['~/assets/css/main.css'],
+  nitro: {
+    compressPublicAssets: true,
+  },
   colorMode: {
     preference: 'light',
     fallback: 'light',
@@ -20,7 +28,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'Cahaya Berkah Semesta (CBS) — Selaraskan urusan rezeki, ketenangan jiwa, dan masa depan keluarga melalui ekosistem bisnis yang halal dan penuh keberkahan.',
+            'CBS membantu keluarga Muslim menjaga rezeki, menumbuhkan keberkahan, dan mempersiapkan masa depan dunia serta akhirat melalui ekosistem Hijrah Finansial.',
         },
         {
           name: 'keywords',
@@ -31,22 +39,22 @@ export default defineNuxtConfig({
         { name: 'author', content: 'Cahaya Berkah Semesta' },
         // Open Graph / Facebook
         { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: 'CBS — Menemukan Kedamaian Lewat Hijrah Finansial' },
+        { property: 'og:title', content: 'CBS — Gerakan Hijrah Finansial & Tiket Emas Baitullah' },
         {
           property: 'og:description',
           content:
-            'Bukan sekadar peluang bisnis, tetapi perjalanan menuju rezeki yang lebih halal, lebih berkah, dan lebih menenangkan bersama Cahaya Berkah Semesta.',
+            'Gerakan nasional untuk menjaga nilai rezeki, membangun komunitas, dan mempersiapkan perjalanan menuju Baitullah.',
         },
         { property: 'og:image', content: '/hero-illustration.png' },
         { property: 'og:site_name', content: 'Cahaya Berkah Semesta (CBS)' },
         { property: 'og:locale', content: 'id_ID' },
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'CBS — Menemukan Kedamaian Lewat Hijrah Finansial' },
+        { name: 'twitter:title', content: 'CBS — Gerakan Hijrah Finansial & Tiket Emas Baitullah' },
         {
           name: 'twitter:description',
           content:
-            'Bukan sekadar peluang bisnis, tetapi perjalanan menuju rezeki yang lebih halal, lebih berkah, dan lebih menenangkan bersama Cahaya Berkah Semesta.',
+            'Gerakan nasional untuk menjaga nilai rezeki, membangun komunitas, dan mempersiapkan perjalanan menuju Baitullah.',
         },
         { name: 'twitter:image', content: '/hero-illustration.png' },
       ],
@@ -56,7 +64,7 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Poppins:wght@400;500;600&family=Inter:wght@400;500&display=swap',
+          href: 'https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap',
         },
       ],
     },

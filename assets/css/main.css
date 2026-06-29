@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-emerald: #0F5D4E;
+  --color-emerald: #0F5C4D;
   --color-emerald-50: #EAF4F1;
   --color-emerald-100: #D2E7E1;
   --color-emerald-200: #A5CFC3;
   --color-emerald-300: #6FB1A0;
   --color-emerald-400: #3C8A76;
-  --color-emerald-500: #0F5D4E;
+  --color-emerald-500: #0F5C4D;
   --color-emerald-600: #0D5344;
   --color-emerald-700: #0A4339;
   --color-emerald-800: #08362E;
@@ -26,12 +26,13 @@
   --color-forest: #052E27;
   --color-forestdeep: #021A16;
   --color-warm: #FAF8F3;
-  --color-ink: #1A1A1A;
-  --color-muted: #5B5B5B;
+  --color-ink: #15211D;
+  --color-muted: #5B6B66;
 
-  --font-family-heading: "Bricolage Grotesque", system-ui, sans-serif;
-  --font-family-body: "Poppins", system-ui, sans-serif;
-  --font-family-small: "Inter", system-ui, sans-serif;
+  --font-family-heading: "Fraunces", Georgia, serif;
+  --font-family-body: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-family-small: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-family-arabic: "Amiri", Georgia, serif;
 
   --radius-xl2: 24px;
 
@@ -52,12 +53,32 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-family-heading);
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
 }
 
 .font-heading { font-family: var(--font-family-heading); }
 .font-body { font-family: var(--font-family-body); }
 .font-small { font-family: var(--font-family-small); }
+.font-arabic { font-family: var(--font-family-arabic); }
+
+.section-shell {
+  max-width: var(--max-width-container);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 768px) {
+  .section-shell {
+    padding-inline: 2rem;
+  }
+}
+
+.islamic-pattern {
+  background-image:
+    linear-gradient(30deg, rgba(212, 175, 55, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(212, 175, 55, 0.08) 87.5%, rgba(212, 175, 55, 0.08)),
+    linear-gradient(150deg, rgba(212, 175, 55, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(212, 175, 55, 0.08) 87.5%, rgba(212, 175, 55, 0.08));
+  background-size: 38px 66px;
+}
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
