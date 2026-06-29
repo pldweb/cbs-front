@@ -36,7 +36,7 @@ const heroPhoto = '/photos/hero-family-mosque.jpg'
 
         <!-- KANAN:-->
         <div class="order-1 lg:order-2 text-center lg:text-left">
-          <h1 class="font-heading font-extrabold text-5xl w-[90%] sm:text-6xl lg:text-5xl xl:text-[60px] leading-[1.05] text-ink">
+          <h1 class="font-heading font-extrabold text-5xl md:w-[90%] sm:text-6xl lg:text-5xl xl:text-[60px] leading-[1.05] text-ink">
             Bekerja Keras Tidak Selalu
             <br />
             <span class="text-emerald-500">Membawa Ketenangan.</span>

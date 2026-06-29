@@ -60,45 +60,45 @@ const estimasiLabel = computed(() => {
         </p>
       </div>
 
-      <div class="mt-14 max-w-3xl mx-auto">
-        <div class="bg-white rounded-4xl border border-emerald-100/50 shadow-premium overflow-hidden">
+      <div class="mt-10 lg:mt-14 max-w-3xl mx-auto">
+        <div class="bg-white rounded-3xl sm:rounded-4xl border border-emerald-100/50 shadow-premium overflow-hidden">
           <!-- Header card -->
-          <div class="px-8 pt-8 pb-6 border-b border-emerald-50">
-            <h3 class="font-heading font-bold text-xl text-ink">Pilih Target Perjalanan</h3>
-            <div class="mt-4 flex gap-3 flex-wrap">
+          <div class="px-5 sm:px-8 pt-6 sm:pt-8 pb-5 sm:pb-6 border-b border-emerald-50">
+            <h3 class="font-heading font-bold text-lg sm:text-xl text-ink">Pilih Target Perjalanan</h3>
+            <div class="mt-4 grid gap-3 sm:grid-cols-3">
               <button
                 v-for="(t, i) in targetOptions"
                 :key="i"
-                class="flex-1 min-w-25 rounded-xl py-3 px-4 text-center font-small text-sm font-semibold transition-all duration-200 border"
+                class="rounded-xl py-3 px-3 text-center font-small text-sm font-semibold transition-all duration-200 border"
                 :class="selectedTarget === i
                   ? 'bg-emerald-500 text-white border-emerald-500 shadow-md'
                   : 'bg-warm text-muted border-emerald-100 hover:border-emerald-300'"
                 @click="selectedTarget = i"
               >
                 {{ t.label }}
-                <div class="font-small text-xs font-normal mt-0.5 opacity-80">{{ formatRupiah(t.biaya) }}</div>
+                <div class="font-small text-[11px] sm:text-xs font-normal mt-0.5 opacity-80 break-words">{{ formatRupiah(t.biaya) }}</div>
               </button>
             </div>
           </div>
 
           <!-- Inputs -->
-          <div class="px-8 py-6 space-y-6">
+          <div class="px-5 sm:px-8 py-6 space-y-7">
             <!-- Tabungan per bulan -->
             <div>
               <label class="font-small text-sm font-semibold text-ink mb-2 block">
                 Kemampuan Menabung per Bulan
               </label>
-              <div class="flex items-center gap-3">
+              <div class="grid gap-3 sm:grid-cols-[1fr_176px] sm:items-center">
                 <input
                   v-model.number="tabunganBulan"
                   type="range"
                   min="100000"
                   max="5000000"
                   step="100000"
-                  class="flex-1 h-2 rounded-full accent-emerald-500"
+                  class="w-full h-2 rounded-full accent-emerald-500"
                 />
-                <div class="bg-emerald-50 border border-emerald-200 rounded-xl px-4 py-2 text-right w-44 shrink-0">
-                  <span class="font-heading font-bold text-lg text-emerald-600">{{ formatRupiah(tabunganBulan) }}</span>
+                <div class="bg-emerald-50 border border-emerald-200 rounded-xl px-4 py-3 text-left sm:text-right">
+                  <span class="font-heading font-bold text-base sm:text-lg text-emerald-600 break-words">{{ formatRupiah(tabunganBulan) }}</span>
                 </div>
               </div>
               <div class="flex justify-between mt-1 font-small text-xs text-muted">
@@ -111,28 +111,28 @@ const estimasiLabel = computed(() => {
               <label class="font-small text-sm font-semibold text-ink mb-2 block">
                 Dana yang Sudah Dimiliki (opsional)
               </label>
-              <div class="flex items-center gap-3">
+              <div class="grid gap-3 sm:grid-cols-[1fr_176px] sm:items-center">
                 <input
                   v-model.number="sudahPunya"
                   type="range"
                   min="0"
                   :max="targetBiaya"
                   step="500000"
-                  class="flex-1 h-2 rounded-full accent-gold"
+                  class="w-full h-2 rounded-full accent-gold"
                 />
-                <div class="bg-gold/10 border border-gold/30 rounded-xl px-4 py-2 text-right w-44 shrink-0">
-                  <span class="font-heading font-bold text-lg text-gold">{{ formatRupiah(sudahPunya) }}</span>
+                <div class="bg-gold/10 border border-gold/30 rounded-xl px-4 py-3 text-left sm:text-right">
+                  <span class="font-heading font-bold text-base sm:text-lg text-gold break-words">{{ formatRupiah(sudahPunya) }}</span>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Result -->
-          <div class="mx-8 mb-8 rounded-2xl overflow-hidden" style="background: linear-gradient(135deg, #0F5D4E 0%, #052E27 100%)">
-            <div class="p-6 space-y-5">
+          <div class="mx-5 sm:mx-8 mb-6 sm:mb-8 rounded-2xl overflow-hidden" style="background: linear-gradient(135deg, #0F5D4E 0%, #052E27 100%)">
+            <div class="p-5 sm:p-6 space-y-5">
               <!-- Progress bar -->
               <div>
-                <div class="flex justify-between font-small text-xs text-white/60 mb-2">
+                <div class="flex flex-col gap-1 sm:flex-row sm:justify-between font-small text-xs text-white/60 mb-2">
                   <span>Progress Dana</span>
                   <span>{{ progressPersen }}% terkumpul</span>
                 </div>
@@ -146,18 +146,18 @@ const estimasiLabel = computed(() => {
               </div>
 
               <!-- Estimasi -->
-              <div class="grid grid-cols-3 gap-4 text-center">
-                <div>
+              <div class="grid gap-3 sm:grid-cols-3 sm:gap-4">
+                <div class="rounded-xl bg-white/5 border border-white/10 px-4 py-3 sm:border-0 sm:bg-transparent sm:px-0 sm:py-0 text-left sm:text-center">
                   <p class="font-small text-xs text-white/50 mb-1">Target</p>
-                  <p class="font-heading font-bold text-base text-white">{{ formatRupiah(targetBiaya) }}</p>
+                  <p class="font-heading font-bold text-sm sm:text-base text-white break-words">{{ formatRupiah(targetBiaya) }}</p>
                 </div>
-                <div>
+                <div class="rounded-xl bg-white/5 border border-white/10 px-4 py-3 sm:border-0 sm:bg-transparent sm:px-0 sm:py-0 text-left sm:text-center">
                   <p class="font-small text-xs text-white/50 mb-1">Sisa Dana</p>
-                  <p class="font-heading font-bold text-base text-white">{{ formatRupiah(sisaDana) }}</p>
+                  <p class="font-heading font-bold text-sm sm:text-base text-white break-words">{{ formatRupiah(sisaDana) }}</p>
                 </div>
-                <div>
+                <div class="rounded-xl bg-white/5 border border-white/10 px-4 py-3 sm:border-0 sm:bg-transparent sm:px-0 sm:py-0 text-left sm:text-center">
                   <p class="font-small text-xs text-white/50 mb-1">Estimasi</p>
-                  <p class="font-heading font-bold text-base text-gold">{{ estimasiLabel }}</p>
+                  <p class="font-heading font-bold text-sm sm:text-base text-gold">{{ estimasiLabel }}</p>
                 </div>
               </div>
 
