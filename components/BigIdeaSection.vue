@@ -1,14 +1,5 @@
 <script setup lang="ts">
-/*
-  AI IMAGE PROMPT — Big Idea Visual:
-  A silhouette of a person walking confidently from darkness (left) toward warm golden light (right).
-  The path is a subtle upward curve suggesting growth/journey. In the light: hints of mosque architecture,
-  flourishing green plants, and subtle geometric Islamic patterns. The scene represents hijrah (migration)
-  from financial uncertainty toward blessed prosperity. Style: minimalist, spiritual, premium,
-  dark-to-light gradient narrative. No text. Aspect ratio: 16:9 or can be cropped to banner.
-  Color palette: deep forest green #052E27 fading to emerald #0F5D4E to warm gold #D4AF37.
-  Prompt tools: Midjourney / DALL-E 3 / Stable Diffusion
-*/
+const baitullahPhoto = '/photos/baitullah-kaaba.jpg'
 </script>
 
 <template>
@@ -34,13 +25,13 @@
           <span class="text-gold">Tapi Hijrah Finansial.</span>
         </p>
 
-        <!-- Premium AI Generated Illustration Banner -->
-        <div class="mt-10 mb-10 max-w-2xl mx-auto rounded-[32px] overflow-hidden shadow-2xl border border-white/10 aspect-[16/9] opacity-95">
+        <div class="relative mt-10 mb-10 max-w-2xl mx-auto rounded-[32px] overflow-hidden shadow-2xl border border-white/10 aspect-[16/9] opacity-95">
           <img
-            src="/big-idea-illustration.png"
-            alt="Hijrah Finansial siluet berjalan menuju cahaya"
-            class="w-full h-full object-cover"
+            :src="baitullahPhoto"
+            alt="Kaaba sebagai tujuan perjalanan Baitullah"
+            class="w-full h-full object-cover object-center"
           />
+          <div class="absolute inset-0 bg-linear-to-t from-forest/40 via-transparent to-transparent" />
         </div>
 
         <p class="mt-8 text-lg text-white/70 max-w-xl mx-auto leading-relaxed">

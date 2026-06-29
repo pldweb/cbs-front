@@ -3,14 +3,21 @@
     <SiteHeader />
     <HeroSection />
     <MasalahSection />
+    <MusuhSection />
     <SolusiSection />
     <BigIdeaSection />
     <HijrahSection />
     <EkosistemSection />
-    <ProdukSection />
+    <TiketEmasBaitullahSection />
+    <RoadmapBaitullahSection />
+    <!-- <ProdukSection /> -->
     <MudahSection />
     <SocialProofSection />
+    <FounderSection />
+    <VideoTestimoniSection />
     <PaketSection />
+    <SimulatorBaitullahSection />
+    <BlogEdukasiSection />
     <FaqSection />
     <FinalCtaSection />
     <SiteFooter />

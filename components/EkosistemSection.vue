@@ -29,6 +29,16 @@ const pilar = [
     delay: '450',
   },
 ]
+
+const branches = [
+  'Hijrah Finansial',
+  'Produk Kesehatan',
+  'Produk Kecantikan',
+  'Al-Quran',
+  'Wakaf',
+  'Tiket Emas Baitullah',
+  'Komunitas Nasional',
+]
 </script>
 
 <template>

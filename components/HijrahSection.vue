@@ -1,4 +1,43 @@
 <script setup lang="ts">
+const journey = [
+  {
+    label: 'Gelisah',
+    desc: 'Mulai jujur bahwa uang masuk belum tentu membuat hati tenang.',
+    icon: 'i-heroicons-exclamation-triangle',
+    accent: 'text-rose-500 bg-rose-50 border-rose-100',
+  },
+  {
+    label: 'Sadar',
+    desc: 'Melihat pola bocor: inflasi, utang, konsumsi, dan tujuan yang kabur.',
+    icon: 'i-heroicons-light-bulb',
+    accent: 'text-amber-600 bg-amber-50 border-amber-100',
+  },
+  {
+    label: 'Belajar',
+    desc: 'Mengenal cara menjaga rezeki, memilih produk halal, dan menata prioritas.',
+    icon: 'i-heroicons-book-open',
+    accent: 'text-sky-600 bg-sky-50 border-sky-100',
+  },
+  {
+    label: 'Bertumbuh',
+    desc: 'Mulai punya sistem, komunitas, dan jalur penghasilan yang lebih sehat.',
+    icon: 'i-heroicons-arrow-trending-up',
+    accent: 'text-emerald-500 bg-emerald-50 border-emerald-100',
+  },
+  {
+    label: 'Berkah',
+    desc: 'Bisnis tidak hanya mengejar angka, tapi juga dakwah, keluarga, dan wakaf.',
+    icon: 'i-heroicons-sparkles',
+    accent: 'text-gold bg-gold/10 border-gold/30',
+  },
+  {
+    label: 'Baitullah',
+    desc: 'Rezeki diarahkan menjadi bekal perjalanan besar menuju panggilan Allah.',
+    icon: 'i-heroicons-map-pin',
+    accent: 'text-forest bg-white border-emerald-100',
+  },
+]
+
 const timeline = [
   {
     side: 'left',
@@ -46,6 +85,24 @@ const timeline = [
           Hijrah Finansial adalah perjalanan menata ulang hubunganmu dengan rezeki —
           dari sumber yang abu-abu menuju keberkahan yang nyata.
         </p>
+      </div>
+
+      <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div
+          v-for="(step, i) in journey"
+          :key="step.label"
+          class="group relative overflow-hidden rounded-3xl bg-white border border-emerald-100/60 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-soft"
+        >
+          <div class="absolute right-5 top-4 font-heading font-extrabold text-5xl text-emerald-50 transition-colors duration-300 group-hover:text-gold/20">
+            {{ String(i + 1).padStart(2, '0') }}
+          </div>
+          <div :class="['relative grid place-items-center w-12 h-12 rounded-2xl border mb-5', step.accent]">
+            <UIcon :name="step.icon" class="w-6 h-6" />
+          </div>
+          <p class="relative font-small text-xs font-semibold tracking-widest uppercase text-muted">Tahap {{ i + 1 }}</p>
+          <h3 class="relative mt-2 font-heading font-extrabold text-2xl text-ink">{{ step.label }}</h3>
+          <p class="relative mt-3 font-small text-sm text-muted leading-relaxed">{{ step.desc }}</p>
+        </div>
       </div>
 
       <div class="mt-16 relative">

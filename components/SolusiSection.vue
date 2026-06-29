@@ -17,9 +17,9 @@
           <!-- Image Container -->
           <div class="w-full aspect-[4/3] rounded-[32px] overflow-hidden shadow-2xl border border-emerald-100">
             <img
-              src="/crossroads-illustration.png"
-              alt="Seseorang berdiri di persimpangan jalan menuju cahaya"
-              class="w-full h-full object-cover"
+              src="/photos/community-kajian.jpg"
+              alt="Kajian Al-Quran bersama pembimbing di masjid"
+              class="w-full h-full object-cover object-center"
             />
           </div>
         </div>

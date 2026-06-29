@@ -4,8 +4,10 @@ const scrolled = ref(false)
 
 const menu = [
   { label: 'Beranda', to: '#hero' },
-  { label: 'Tentang Hijrah Finansial', to: '#hijrah' },
-  { label: 'Ekosistem CBS', to: '#ekosistem' },
+  { label: 'Hijrah', to: '#hijrah' },
+  { label: 'Baitullah', to: '#tiket-emas' },
+  { label: 'Ekosistem', to: '#ekosistem' },
+  { label: 'Edukasi', to: '#edukasi' },
   { label: 'Testimoni', to: '#testimoni' },
   { label: 'FAQ', to: '#faq' },
 ]

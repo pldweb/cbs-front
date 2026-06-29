@@ -7,24 +7,32 @@ const faqs = [
     a: 'CBS (Cahaya Berkah Semesta) adalah ekosistem bisnis halal yang menyatukan bisnis, dakwah, dan wakaf dalam satu gerakan bernama "Hijrah Finansial" — perjalanan menata ulang rezeki menuju sumber yang lebih halal dan berkah.',
   },
   {
-    q: 'Apakah ini MLM atau skema piramida?',
-    a: 'Bukan. CBS adalah model distribusi produk langsung (direct selling) dengan sistem yang transparan dan sesuai syariat Islam. Tidak ada tutup point, tidak ada belanja wajib bulanan, dan kamu bisa memulai hanya dengan modal HP + internet.',
+    q: 'Apakah bisnis CBS aman dan terpercaya?',
+    a: 'Ya. CBS telah berdiri lebih dari 15 tahun dengan track record yang terbukti. Sistem kami transparan, tidak ada skema piramida, dan seluruh operasional berjalan sesuai prinsip syariat Islam. Ratusan ribu transaksi telah berlangsung dengan aman.',
   },
   {
-    q: 'Saya pemula, apakah bisa menjalankan bisnis ini?',
-    a: 'Bisa. 80% mitra CBS memulai dari nol tanpa pengalaman bisnis. Kamu akan mendapatkan bimbingan intensif, tools siap pakai, dan dukungan komunitas.',
+    q: 'Bagaimana legalitas CBS?',
+    a: 'CBS beroperasi secara legal dengan izin usaha resmi. Semua produk telah mendapat sertifikasi halal MUI dan terdaftar di BPOM. Sistem bisnis kami juga telah dikaji secara syariah dan sesuai prinsip-prinsip Islam.',
   },
   {
-    q: 'Produknya sudah halal dan BPOM?',
-    a: 'Ya. Semua produk CBS sudah bersertifikasi halal MUI dan terdaftar di BPOM. Kami sangat serius menjaga standar ini karena ini menyangkut nilai ibadah.',
+    q: 'Apakah ada pembinaan dan mentoring?',
+    a: 'Ya. Setiap mitra CBS mendapatkan bimbingan intensif dari mentor berpengalaman, akses ke materi edukasi Hijrah Finansial, webinar eksklusif bulanan, dan dukungan komunitas nasional. Kamu tidak akan berjalan sendiri.',
   },
   {
-    q: 'Berapa modal yang dibutuhkan?',
-    a: 'Kamu cukup berinvestasi Rp 1.500.000 sekali saja. Sudah termasuk starter kit produk dan akses penuh ke sistem bisnis CBS.',
+    q: 'Bagaimana cara menuju Baitullah melalui CBS?',
+    a: 'Program Tiket Emas Baitullah CBS memberikan jalur nyata menuju Baitullah: bergabung komunitas → belajar Hijrah Finansial → menabung emas syariah → riyadhoh spiritual → keberangkatan umrah/haji. Sudah 500+ jamaah berhasil berangkat bersama CBS.',
   },
   {
-    q: 'Bagaimana dengan program wakafnya?',
-    a: 'Setiap transaksi yang terjadi di ekosistem CBS secara otomatis menyisihkan sebagian profit untuk program wakaf produktif. Jadi bisnismu otomatis bernilai amal jariyah.',
+    q: 'Bagaimana sistem tabungan emas di CBS?',
+    a: 'Program tabungan emas CBS menggunakan sistem syariah yang terpercaya. Kamu bisa mulai menabung emas dalam nominal kecil, dan nilainya akan terjaga dari inflasi. Emas yang terkumpul menjadi modal perjalanan ke Baitullah.',
+  },
+  {
+    q: 'Bagaimana program wakaf CBS bekerja?',
+    a: 'Setiap transaksi di ekosistem CBS secara otomatis menyisihkan sebagian profit untuk program wakaf produktif. Wakaf ini disalurkan untuk pembangunan fasilitas umat, pendidikan, dan program sosial. Bisnismu otomatis bernilai amal jariyah.',
+  },
+  {
+    q: 'Saya pemula, bisakah langsung bergabung?',
+    a: 'Bisa. 80% mitra CBS memulai dari nol tanpa pengalaman bisnis. Sistem CBS dirancang agar siapa pun bisa langsung mulai. Kamu akan mendapat bimbingan dari awal, tools siap pakai, dan dukungan penuh dari komunitas CBS.',
   },
 ]
 
